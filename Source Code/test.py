@@ -86,3 +86,10 @@ plt.title('Confusion matrix', y=1.1)
 plt.ylabel('Actual label')
 plt.xlabel('Predicted label')
 
+#packing the classifier using pickle file so that it can be used anytime without we have to train it again and again.
+
+
+pickle.dumb(classifer , open('model.pkl', 'wb')
+model = pickle.load(open('model.pkl','rb')
+
+#print(model.predict([[0,4,2]])) 
